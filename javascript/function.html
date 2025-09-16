@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-
-
 <head>
-    
+    <style>
+        #adi{
+            border: 5px solid black;
+            height: 250px;
+            width: 250px;
+            background-color: brown;
+        }
+    </style>
 </head>
 <body>
+
+    <div id="adi">
+        <button onclick="abes()">click</button>
+        <p id="fpara"></p>
+    </div>
     <script>
-        var a =10;
-        var b=20;
-        // function abes(){
-        //     document.write("html");
-        // }
+        // var a =10;
+        // var b=20;
+        function abes(){
+            document.getElementById("fpara").innerHTML="<h1> hello </h1>";
+        }
         // abes();
-        function add(a,b){
-            var c=a+b;
-            document.write(c);
-        }
-        function sub(a,b){
-            var c=a-b;
-            document.write(c);
-        }
+        // function add(a,b){
+        //     var c=a+b;
+        //     document.write(c);
+        // }
+        // function sub(a,b){
+        //     var c=a-b;
+        //     document.write(c);
+        // }
         add(a,b);
         sub(a,b);
     </script>
