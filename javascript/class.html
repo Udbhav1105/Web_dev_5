@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="fpara"></p>
+    <p id="spara"></p>
+    <script>
+        class Car{
+             constructor(name,year){
+                this.name=name;
+                this.year=year;
+             }
+        }
+        const a=new Car('audi', 2025);
+        const b=new Car('ford',2024);
+        document.getElementById("fpara").innerHTML=a.name + " "+ a.year;
+        document.getElementById("spara").innerHTML=b.year +" "+ b.name;
+    </script>
+
+
+</body>
+</html>
