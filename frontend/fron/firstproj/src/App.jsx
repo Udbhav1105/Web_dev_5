@@ -1,15 +1,10 @@
 import React from 'react'
-import Card from './components/card.jsx'
-import Navbar from './components/navbar.jsx'
-import './App.css'
+import Link1 from './components/Link1'
 
-function App() {
+const App = () => {
   return (
-    <div class="contain">
-      <Navbar/> <br />
-      <Card/> <br />
-      <Card/> <br />
-      <Card/> <br />
+    <div>
+      <Link1 />
     </div>
   )
 }
