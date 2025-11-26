@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        #same{
+            height: 500px;
+            width: 250px;
+            border: 2px solid black;
+      
+            
+            background-color: rgb(252, 100, 100);
+            color: white;
+            
+        }
+        #same .internal{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: center;
+           
+            
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="same">
+       <center><h3>Student Deatils</h3></center>
+        <div id="s1" class="internal"></div>
+        <div id="s2" class="internal"></div>
+        <div id="s3" class="internal"></div>
+
+    </div>
+    <div id="same">
+        <h3>Student Details</h3>
+         <div id="s4" class="internal"></div>
+         <div id="s5" class="internal"></div>
+
+    </div>
+
+    <script>
+        const student1=new Object({
+            sName:"Abhishek",
+            course:"btech",
+            branch:"IT",
+            roll:123
+        })
+        const student2=new Object({
+            sName:"Vivek",
+            course:"btech",
+            branch:"IT",
+            roll:345
+        })
+        const student3=new Object({
+            sName:"Yash",
+            course:"btech",
+            branch:"IT",
+            roll:567
+        })
+        const student4=new Object({
+            sName:"Sanskar",
+            course:"btech",
+            branch:"DS",
+            roll:321
+        })
+        const student5=new Object({
+            sName:"Vaibhav",
+            course:"btech",
+            branch:"CSE",
+            roll:636
+        })
+        document.getElementById("s1").innerHTML="Student1"+"<br> Name: "+student1.sName+"<br> Roll no. "+student1.roll+"<br> Course: " +student1.course+"<br> Branch: "+student1.branch
+        document.getElementById("s2").innerHTML="Student2"+"<br> Name: "+student2.sName+"<br> Roll no. "+student2.roll+"<br> Course: " +student2.course+"<br> Branch: "+student2.branch
+        document.getElementById("s3").innerHTML="Student3"+"<br> Name: "+student3.sName+"<br> Roll no. "+student3.roll+"<br> Course: " +student3.course+"<br> Branch: "+student3.branch
+        document.getElementById("s4").innerHTML="Student4"+"<br> Name: "+student4.sName+"<br> Roll no. "+student4.roll+"<br> Course: " +student4.course+"<br> Branch: "+student4.branch
+        document.getElementById("s5").innerHTML="Student5"+"<br> Name: "+student5.sName+"<br> Roll no. "+student5.roll+"<br> Course: " +student5.course+"<br> Branch: "+student5.branch
+        document.getElementById("s1").style="font-size:20px"
+        document.getElementById("s2").style="font-size:20px"
+        document.getElementById("s3").style="font-size:20px"
+        document.getElementById("s4").style="font-size:20px"
+        document.getElementById("s5").style="font-size:20px"
+    </script>
+
+    
+</body>
+</html>

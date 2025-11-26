@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json creation</title>
+</head>
+<body>
+    <p id="fpara"></p>
+    <script>
+        const person={
+            first: "mohan",
+            last:"sharma",
+            age:46
+
+        }
+        
+        
+        const person1=new Object({
+            first: "mohan",
+            last:"sharma",
+            age:46
+
+        })
+        // console.log(person);
+        document.getElementById("fpara").innerHTML=person.last;
+        // console.log("age of the person is" + person.age)
+    </script>
+</body>
+</html>
